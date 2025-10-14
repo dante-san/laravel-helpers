@@ -1,7 +1,3 @@
-Here’s a **clean, professional, production-ready README.md** for your Laravel Helpers package — written in the tone and structure used by official Laravel ecosystem packages 👇
-
----
-
 # Laravel Helpers
 
 A lightweight yet powerful collection of reusable helper functions and utilities designed to simplify common tasks in Laravel applications.
@@ -151,7 +147,6 @@ Then run tests and make your improvements!
 `laravel` · `helpers` · `utility` · `php` · `facade` · `laravel-package` · `artisan` · `laxmidhar`
 
 ```
-
 ---
 
 Would you like me to also generate the matching **`composer.json` metadata block** (with `name`, `description`, `autoload`, `extra`, and `authors`) to make it look like a published package on Packagist?
