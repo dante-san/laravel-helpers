@@ -121,7 +121,7 @@ This package is open-sourced software licensed under the [MIT license](LICENSE).
 
 ## 👨‍💻 Author
 
-**Laxmidhar Moharana**
+**Laxmidhar Moharana** •
 Senior Laravel Developer • Open Source Contributor
 🔗 [GitHub](https://github.com/dante-san)  |  💼 [LinkedIn](https://www.linkedin.com/in/laxmidhar-moharana)
 
