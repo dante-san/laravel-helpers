@@ -146,8 +146,3 @@ Then run tests and make your improvements!
 
 `laravel` · `helpers` · `utility` · `php` · `facade` · `laravel-package` · `artisan` · `laxmidhar`
 
-```
----
-
-Would you like me to also generate the matching **`composer.json` metadata block** (with `name`, `description`, `autoload`, `extra`, and `authors`) to make it look like a published package on Packagist?
-```
