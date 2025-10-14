@@ -123,7 +123,7 @@ This package is open-sourced software licensed under the [MIT license](LICENSE).
 
 **Laxmidhar Moharana** •
 Senior Laravel Developer • Open Source Contributor
-🔗 [GitHub](https://github.com/dante-san)  |  💼 [LinkedIn](https://www.linkedin.com/in/laxmidharmaharana/)  |  ✉️ [Email](mailto:papu.team7@gmail.com)
+🔗 <a href="https://github.com/dante-san" target="_blank">GitHub</a>  |  💼 <a href="https://www.linkedin.com/in/laxmidharmaharana/" target="_blank">LinkedIn</a>  |  ✉️ [Email](mailto:papu.team7@gmail.com)
 
 ---
 
