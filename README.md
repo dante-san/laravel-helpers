@@ -2,7 +2,6 @@ Here’s a **clean, professional, production-ready README.md** for your Laravel 
 
 ---
 
-````markdown
 # Laravel Helpers
 
 A lightweight yet powerful collection of reusable helper functions and utilities designed to simplify common tasks in Laravel applications.
