@@ -1,0 +1,40 @@
+{
+    "name": "laxmidhar/laravel-helpers",
+    "description": "My helper functions",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Laxmidhar\\LaravelHelpers\\": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "authors": [
+        {
+            "name": "Laxmidhar Maharana",
+            "email": "papu.team7@example.com"
+        }
+    ],
+    "require": {
+        "php": "^8.1|^8.2",
+        "illuminate/support": "^10.0|^11.0"
+    },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../helper-package"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Laxmidhar\\LaravelHelpers\\HelperServiceProvider"
+            ],
+            "aliases": {
+                "Helper": "Laxmidhar\\LaravelHelpers\\Facades\\Helper"
+            }
+        }
+    }
+}
