@@ -333,21 +333,6 @@ Helper::sanitizeString('  User Input  <b>Bold</b>  ');
 
 ### 💰 Number & Currency Helpers
 
-#### `convertCurrency(int $no): string`
-
-Convert numbers to K/Lakh/Cr format.
-
-```php
-Helper::convertCurrency(5000);
-// Output: "5K"
-
-Helper::convertCurrency(250000);
-// Output: "2.5 Lakh"
-
-Helper::convertCurrency(15000000);
-// Output: "1.5 Cr"
-```
-
 #### `formatCurrency(float $amount, string $currency = '₹'): string`
 
 Format amount as currency.
