@@ -1,6 +1,6 @@
 {
     "name": "laxmidhar/laravel-helpers",
-    "description": "My helper functions",
+    "description": "A handy little toolkit that makes Laravel do the boring stuff so you don’t have to.",
     "type": "library",
     "license": "MIT",
     "version": "1.1.0",
