@@ -26,7 +26,7 @@ A comprehensive collection of 85+ production-ready helper functions designed to 
 ## 📋 Requirements
 
 - PHP 8.0 or higher
-- Laravel 9.x, 10.x, or 11.x
+- Laravel 9.x, 10.x, 11.x, or 12.x
 
 ---
 
