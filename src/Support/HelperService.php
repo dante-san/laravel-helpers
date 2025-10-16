@@ -6,7 +6,7 @@ use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
 use Carbon\Carbon;
 
-class Helper
+class HelperService
 {
     // ==================== URL & SLUG HELPERS ====================
 
