@@ -83,7 +83,6 @@ MyHelper::prettyUrls('Hello World');
 
 | Method                                         | Description                              |
 | ---------------------------------------------- | ---------------------------------------- |
-| `sayHello()`                                   | Test method                              |
 | `prettyUrls(string $string)`                   | Converts a string to a URL-friendly slug |
 | `getCanonicalDate($date, bool $flag = true)`   | Formats a date into canonical format     |
 | `formatTime($datetime)`                        | Converts to 12-hour formatted time       |
