@@ -55,7 +55,6 @@ This creates `config/helpers.php` where you can customize:
 ```php
 return [
     'facade_alias' => env('HELPERS_FACADE_ALIAS', 'Helper'),
-    'enable_global_helpers' => true,
 ];
 ```
 
