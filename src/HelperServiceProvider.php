@@ -23,17 +23,17 @@ class HelperServiceProvider extends ServiceProvider
     public function boot()
     {
         // Publish config
-        // if ($this->app->runningInConsole()) {
-        //     $this->publishes([
-        //         __DIR__ . '/../config/helpers.php' => config_path('helpers.php'),
-        //     ], 'helpers-config');
-        // }
+        if ($this->app->runningInConsole()) {
+            $this->publishes([
+                __DIR__ . '/../config/helpers.php' => config_path('helpers.php'),
+            ], 'helpers-config');
+        }
 
         // // Register custom facade alias if configured
-        // $customAlias = config('helpers.facade_alias');
-        // if ($customAlias && $customAlias !== 'Helper') {
-        //     $this->app->alias('laravel-helpers', $customAlias);
-        // }
+        $customAlias = config('helpers.facade_alias');
+        if ($customAlias && $customAlias !== 'Helper') {
+            $this->app->alias('laravel-helpers', $customAlias);
+        }
     }
 
     public function provides()
