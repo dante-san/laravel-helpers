@@ -1,5 +1,4 @@
 <?php
-// File: src/HelperServiceProvider.php
 
 namespace Laxmidhar\LaravelHelpers;
 
@@ -8,27 +7,32 @@ use Laxmidhar\LaravelHelpers\Support\HelperService;
 
 class HelperServiceProvider extends ServiceProvider
 {
-    public function register()
+    public function register(): void
     {
-        // Register the service in the container
-        $this->app->singleton('laravel-helpers', function ($app) {
+        // Register HelperService as singleton
+        $this->app->singleton(HelperService::class, function () {
             return new HelperService();
         });
 
-        // Also register under a more accessible alias
-        $this->app->alias('laravel-helpers', HelperService::class);
+        // Register under 'laravel-helpers' key
+        $this->app->singleton('laravel-helpers', HelperService::class);
     }
 
-    public function boot()
+    public function boot(): void
     {
-        // Load helper functions file if it exists
-        $helperFile = __DIR__ . '/../helpers.php';
+        // Load helper functions
+        $this->loadHelpers();
+    }
+
+    protected function loadHelpers(): void
+    {
+        $helperFile = __DIR__ . '/helpers.php';
         if (file_exists($helperFile)) {
             require_once $helperFile;
         }
     }
 
-    public function provides()
+    public function provides(): array
     {
         return ['laravel-helpers', HelperService::class];
     }

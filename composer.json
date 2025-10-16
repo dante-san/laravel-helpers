@@ -1,9 +1,20 @@
 {
     "name": "laxmidhar/laravel-helpers",
-    "description": "A handy little toolkit that makes Laravel do the boring stuff so you don’t have to.",
+    "description": "A handy little toolkit that makes Laravel do the boring stuff so you don't have to.",
     "type": "library",
     "license": "MIT",
-    "version": "1.1.1",
+    "version": "1.2.0",
+    "authors": [
+        {
+            "name": "Laxmidhar Maharana",
+            "email": "papu.team@example.com"
+        }
+    ],
+    "require": {
+        "php": "^8.1|^8.2",
+        "illuminate/support": "^9.0|^10.0|^11.0|^12.0",
+        "nesbot/carbon": "^2.0|^3.0"
+    },
     "autoload": {
         "psr-4": {
             "Laxmidhar\\LaravelHelpers\\": "src/"
@@ -12,22 +23,6 @@
             "src/helpers.php"
         ]
     },
-    "authors": [
-        {
-            "name": "Laxmidhar Maharana",
-            "email": "papu.team7@example.com"
-        }
-    ],
-    "require": {
-        "php": "^8.1|^8.2",
-        "illuminate/support": "^10.0|^11.0|^12.0"
-    },
-    "repositories": [
-        {
-            "type": "path",
-            "url": "../helper-package"
-        }
-    ],
     "extra": {
         "laravel": {
             "providers": [
@@ -37,5 +32,16 @@
                 "Helper": "Laxmidhar\\LaravelHelpers\\Facades\\Helper"
             }
         }
+    },
+    "keywords": [
+        "laravel",
+        "helpers",
+        "toolkit",
+        "utilities"
+    ],
+    "homepage": "https://github.com/laxmidhar/laravel-helpers",
+    "support": {
+        "issues": "https://github.com/laxmidhar/laravel-helpers/issues",
+        "source": "https://github.com/laxmidhar/laravel-helpers"
     }
 }
