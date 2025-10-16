@@ -2,7 +2,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/packagist/v/laxmidhar/laravel-helpers?style=flat-square" alt="Latest Version">
-  <img src="https://img.shields.io/packagist/dt/laxmidhar/laravel-helpers?style=flat-square" alt="Total Downloads">
+  <img src="https://img.shields.io/packagist/dd/laxmidhar/laravel-helpers?style=flat-square" alt="Total Downloads">
   <img src="https://img.shields.io/packagist/l/laxmidhar/laravel-helpers?style=flat-square" alt="License">
   <img src="https://img.shields.io/badge/Laravel-9.x%20%7C%2010.x%20%7C%2011.x%20%7C%2012.x-FF2D20?style=flat-square&logo=laravel" alt="Laravel Version">
 </p>
