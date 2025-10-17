@@ -39,9 +39,9 @@
         "toolkit",
         "utilities"
     ],
-    "homepage": "https://github.com/laxmidhar/laravel-helpers",
+    "homepage": "https://github.com/dante-san/laravel-helpers",
     "support": {
-        "issues": "https://github.com/laxmidhar/laravel-helpers/issues",
-        "source": "https://github.com/laxmidhar/laravel-helpers"
+        "issues": "https://github.com/dante-san/laravel-helpers/issues",
+        "source": "https://github.com/dante-san/laravel-helpers"
     }
 }
