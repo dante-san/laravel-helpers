@@ -141,33 +141,6 @@ Helper::urlSafe('user@example.com');
 Format date for application display (e.g., "Jan 15, 2024").
 
 ```php
-Helper::appDateFormat('2024-01-15 14:30:00');
-// Output: "Jan 15, 2024"
-
-Helper::appDateFormat(now());
-// Output: "Oct 16, 2025"
-```
-
-# Date Formatting Helpers
-
-These helpers provide a clean, consistent interface for formatting dates and datetimes throughout your Laravel application.
-
-## appDateFormat()
-
-Format date for application display with a customizable format.
-
-```php
-Helper::appDateFormat($date, $format = 'M j, Y'): string
-```
-
-**Parameters:**
-
-- `$date` (string|DateTime|Carbon): The date to format
-- `$format` (string, optional): PHP date format string (default: 'M j, Y')
-
-**Examples:**
-
-```php
 Helper::appDateFormat('2024-01-15');
 // Output: "Jan 15, 2024"
 
@@ -184,21 +157,13 @@ Helper::appDateFormat('2024-06-15', 'l, F j, Y');
 // Output: "Saturday, June 15, 2024"
 ```
 
-## appDateTimeFormat()
+#### `appDateTimeFormat($date): string`
 
 Format datetime for application display with a customizable format.
 
 ```php
 Helper::appDateTimeFormat($date, $format = 'M j, Y g:i A'): string
 ```
-
-**Parameters:**
-
-- `$date` (string|DateTime|Carbon): The datetime to format
-- `$format` (string, optional): PHP date format string (default: 'M j, Y g:i A')
-
-**Examples:**
-
 ```php
 Helper::appDateTimeFormat('2024-01-15 14:30:00');
 // Output: "Jan 15, 2024 2:30 PM"
