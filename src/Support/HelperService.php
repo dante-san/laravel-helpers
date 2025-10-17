@@ -27,14 +27,20 @@ class HelperService
 
     // ==================== DATE & TIME HELPERS ====================
 
+
     public function formatTime(string $time): string
     {
         return Carbon::parse($time)->format('g:i A');
     }
 
-    public function appDateFormat($date): string
+    public function appDateFormat($date, string $format = 'M j, Y'): string
     {
-        return Carbon::parse($date)->format('M j, Y');
+        return Carbon::parse($date)->format($format);
+    }
+
+    public function appDateTimeFormat($date, string $format = 'M j, Y g:i A'): string
+    {
+        return Carbon::parse($date)->format($format);
     }
 
     public function appTimeFormat($date): string

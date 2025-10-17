@@ -148,6 +148,80 @@ Helper::appDateFormat(now());
 // Output: "Oct 16, 2025"
 ```
 
+# Date Formatting Helpers
+
+These helpers provide a clean, consistent interface for formatting dates and datetimes throughout your Laravel application.
+
+## appDateFormat()
+
+Format date for application display with a customizable format.
+
+```php
+Helper::appDateFormat($date, $format = 'M j, Y'): string
+```
+
+**Parameters:**
+
+- `$date` (string|DateTime|Carbon): The date to format
+- `$format` (string, optional): PHP date format string (default: 'M j, Y')
+
+**Examples:**
+
+```php
+Helper::appDateFormat('2024-01-15');
+// Output: "Jan 15, 2024"
+
+Helper::appDateFormat('2024-01-15 14:30:00');
+// Output: "Jan 15, 2024"
+
+Helper::appDateFormat(now());
+// Output: "Oct 18, 2025"
+
+Helper::appDateFormat('2024-12-25', 'd/m/Y');
+// Output: "25/12/2024"
+
+Helper::appDateFormat('2024-06-15', 'l, F j, Y');
+// Output: "Saturday, June 15, 2024"
+```
+
+## appDateTimeFormat()
+
+Format datetime for application display with a customizable format.
+
+```php
+Helper::appDateTimeFormat($date, $format = 'M j, Y g:i A'): string
+```
+
+**Parameters:**
+
+- `$date` (string|DateTime|Carbon): The datetime to format
+- `$format` (string, optional): PHP date format string (default: 'M j, Y g:i A')
+
+**Examples:**
+
+```php
+Helper::appDateTimeFormat('2024-01-15 14:30:00');
+// Output: "Jan 15, 2024 2:30 PM"
+
+Helper::appDateTimeFormat(now());
+// Output: "Oct 18, 2025 10:45 AM"
+
+Helper::appDateTimeFormat('2024-12-25 23:59:59', 'd-m-Y H:i:s');
+// Output: "25-12-2024 23:59:59"
+```
+
+## Common Format Strings
+
+| Format         | Example                    |
+| -------------- | -------------------------- |
+| `M d, Y`       | Jan 15, 2024               |
+| `d-m-Y`        | 15-01-2024                 |
+| `d/m/Y`        | 15/01/2024                 |
+| `Y-m-d`        | 2024-01-15                 |
+| `M d, Y g:i A` | Jan 15, 2024 2:30 PM       |
+| `d-m-Y H:i:s`  | 15-01-2024 14:30:00        |
+| `l, F j, Y`    | Saturday, January 15, 2024 |
+
 #### `appTimeFormat($date): string`
 
 Format time in 12-hour format (e.g., "2:30 PM").
