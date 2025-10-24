@@ -15,11 +15,6 @@ class HelperService
         return Str::slug($string);
     }
 
-    public function sentenceCase(string $string): string
-    {
-        return ucfirst(strtolower($string));
-    }
-
     public function generateSlug(string $text, string $separator = '-'): string
     {
         return Str::slug($text, $separator);
@@ -95,6 +90,11 @@ class HelperService
     }
 
     // ==================== STRING MANIPULATION ====================
+
+    public function sentenceCase(string $string): string
+    {
+        return ucfirst(strtolower($string));
+    }
 
     public function limitText(?string $string, int $limit = 120, string $suffix = "..."): string
     {
