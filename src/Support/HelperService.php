@@ -15,6 +15,11 @@ class HelperService
         return Str::slug($string);
     }
 
+    public function sentenceCase(string $string): string
+    {
+        return ucfirst(strtolower($string));
+    }
+
     public function generateSlug(string $text, string $separator = '-'): string
     {
         return Str::slug($text, $separator);
@@ -27,6 +32,15 @@ class HelperService
 
     // ==================== DATE & TIME HELPERS ====================
 
+    public function age($birthdate): int
+    {
+        return Carbon::parse($birthdate)->age;
+    }
+
+    public function daysUntil($date): int
+    {
+        return now()->diffInDays(Carbon::parse($date), false);
+    }
 
     public function formatTime(string $time): string
     {
@@ -235,6 +249,12 @@ class HelperService
     public function isValidPhone(string $phone): bool
     {
         return preg_match('/^[0-9]{10}$/', preg_replace('/[^0-9]/', '', $phone));
+    }
+
+    public function isValidAadhaar(string $aadhaar): bool
+    {
+        $clean = preg_replace('/[^0-9]/', '', $aadhaar);
+        return preg_match('/^[2-9]{1}[0-9]{11}$/', $clean);
     }
 
     public function isValidIndianPAN(string $pan): bool
