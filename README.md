@@ -893,9 +893,9 @@ If this package helped you, please give it a ⭐️ on [GitHub](https://github.c
 
 ## 📚 Related Packages
 
+- [Desi Currency](https://github.com/dante-san/desi-currency)
 - [Laravel Debugbar](https://github.com/barryvdh/laravel-debugbar)
 - [Laravel IDE Helper](https://github.com/barryvdh/laravel-ide-helper)
-- [Laravel Permissions](https://github.com/spatie/laravel-permission)
 
 ---
 
